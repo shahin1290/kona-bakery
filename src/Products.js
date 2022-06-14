@@ -17,10 +17,17 @@ const Products = () => {
   const [imageList, setImageList] = useState(images.resources);
 
   return (
-    <Container>
-      <Grid container spacing={2}>
+    <Container maxWidth="lg">
+      <Grid
+        container
+        spacing={2}
+        direction={{ xs: "column", sm: "row" }}
+        alignItems="center"
+        justify="center"
+        style={{ minHeight: "100vh" }}
+      >
         {imageList.map((image) => (
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
@@ -31,18 +38,13 @@ const Products = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    Vanilla Strawberry Cake
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
                 <Button size="small" color="primary">
-                  Share
+                  Details
                 </Button>
               </CardActions>
             </Card>
