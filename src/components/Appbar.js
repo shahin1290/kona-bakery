@@ -13,9 +13,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
+const navItems = ["Home", "About"];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -26,9 +27,9 @@ function DrawerAppBar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }} >
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        Kona's Bakery
       </Typography>
       <Divider />
       <List>
@@ -68,8 +69,13 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
+              <Button key={item}>
+                <Link
+                  to={`/${item}`}
+                  style={{ color: "#fff", textDecoration: "none" }}
+                >
+                  {item}
+                </Link>
               </Button>
             ))}
           </Box>

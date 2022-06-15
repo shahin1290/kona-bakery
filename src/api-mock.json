@@ -1,38 +1,30 @@
 {
   "resources": [
     {
+      "id": 1,
+      "url": "https://res.cloudinary.com/dq2nawkx9/image/upload/v1614771744/dxclywl1g7kdpzl7uwex.jpg",
+      "images": [
+        "https://res.cloudinary.com/dq2nawkx9/image/upload/v1633946331/Optimized-welcome-flyer_el30fy.jpg",
+        "https://res.cloudinary.com/dq2nawkx9/image/upload/v1633946318/Optimized-email-flyer_l5bsek.jpg"
+      ]
+    },
+
+    {
+      "id": 2,
+      "url": "https://res.cloudinary.com/dq2nawkx9/image/upload/v1614771744/dxclywl1g7kdpzl7uwex.jpg",
+      "images": [
+        "https://res.cloudinary.com/dq2nawkx9/image/upload/v1624349462/sample.jpg",
+        "https://res.cloudinary.com/dq2nawkx9/image/upload/v1624349506/whiteLogo_j0yxbv.jpg"
+      ]
+    },
+
+    {
+      "id": 3,
       "url": "https://res.cloudinary.com/dq2nawkx9/image/upload/v1614771744/dxclywl1g7kdpzl7uwex.jpg"
     },
 
     {
-      "url": "https://res.cloudinary.com/dq2nawkx9/image/upload/v1614771744/dxclywl1g7kdpzl7uwex.jpg"
-    },
-
-    {
-      "url": "https://res.cloudinary.com/dq2nawkx9/image/upload/v1614771744/dxclywl1g7kdpzl7uwex.jpg"
-    },
-
-    {
-      "url": "https://res.cloudinary.com/dq2nawkx9/image/upload/v1614771744/dxclywl1g7kdpzl7uwex.jpg"
-    },
-
-    {
-      "url": "https://res.cloudinary.com/dq2nawkx9/image/upload/v1614771744/dxclywl1g7kdpzl7uwex.jpg"
-    },
-
-    {
-      "url": "https://res.cloudinary.com/dq2nawkx9/image/upload/v1614771744/dxclywl1g7kdpzl7uwex.jpg"
-    },
-
-    {
-      "url": "https://res.cloudinary.com/dq2nawkx9/image/upload/v1614771744/dxclywl1g7kdpzl7uwex.jpg"
-    },
-
-    {
-      "url": "https://res.cloudinary.com/dq2nawkx9/image/upload/v1614771744/dxclywl1g7kdpzl7uwex.jpg"
-    },
-
-    {
+      "id": 4,
       "url": "https://res.cloudinary.com/dq2nawkx9/image/upload/v1614771744/dxclywl1g7kdpzl7uwex.jpg"
     }
   ]
