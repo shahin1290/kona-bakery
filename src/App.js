@@ -10,9 +10,9 @@ const App = () => {
       <DrawerAppBar />
 
       <Routes>
-        <Route path="home" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="/products/:id" element={<Product />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/products/:id" element={<Product />} />
       </Routes>
     </BrowserRouter>
   );

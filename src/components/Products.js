@@ -14,7 +14,6 @@ import { Link } from "react-router-dom";
 import images from "../api-mock.json";
 
 const Products = () => {
-
   return (
     <Container maxWidth="lg">
       <Grid
@@ -23,21 +22,28 @@ const Products = () => {
         direction={{ xs: "column", sm: "row" }}
         alignItems="center"
         justify="center"
-        style={{ minHeight: "100vh" }}
       >
         {images.resources.map((image) => (
-          <Grid item xs={12} sm={6} md={4} key={image.id}>
+          <Grid item xs={12} sm={6} md={4} key={image.id} my={2}>
             <Card sx={{ maxWidth: 345 }}>
-              <Link to={`/products/${image.id}`}>
+              <Link
+                to={`/products/${image.id}`}
+                style={{ textDecoration: "none" }}
+              >
                 <CardActionArea>
                   <CardMedia
                     component="img"
-                    height="140"
+                    height="200"
                     image={image.url}
                     alt="green iguana"
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      color="secondary"
+                    >
                       Vanilla Strawberry Cake
                     </Typography>
                   </CardContent>
