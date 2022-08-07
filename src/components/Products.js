@@ -6,6 +6,7 @@ import {
 } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import images from "../api-mock.json";
 
 const Products = () => {
@@ -14,15 +15,28 @@ const Products = () => {
     <Container maxWidth="lg">
       <ImageList variant="masonry" cols={matches ? 2 : 3} gap={8}>
         {images.resources.map((item) => (
-          <ImageListItem key={item.id}>
-            <img
-              src={`${item.url}?w=164&h=164&fit=crop&auto=format&dpr=2`}
-              srcSet={`${item.url}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt="cake"
-              loading="lazy"
-            />
-            <ImageListItemBar title={item.id} />
-          </ImageListItem>
+          <SimpleReactLightbox>
+            <SRLWrapper>
+              {" "}
+              <ImageListItem
+                key={item.id}
+                sx={{
+                  opacity: ".9",
+                  transition: "opacity .3s linear",
+                  cursor: "pointer",
+                  "&:hover": { opacity: 1 },
+                }}
+              >
+                <img
+                  src={`${item.url}?w=164&h=164&fit=crop&auto=format&dpr=2`}
+                  srcSet={`${item.url}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                  alt="cake"
+                  loading="lazy"
+                />
+                <ImageListItemBar title={item.id} />
+              </ImageListItem>
+            </SRLWrapper>
+          </SimpleReactLightbox>
         ))}
       </ImageList>
     </Container>
