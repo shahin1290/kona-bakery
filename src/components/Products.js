@@ -13,7 +13,7 @@ const Products = () => {
   const matches = useMediaQuery("(max-width:600px)");
   return (
     <Container maxWidth="lg">
-      <ImageList variant="masonry" cols={matches ? 2 : 3} gap={8}>
+      <ImageList variant="masonry" cols={matches ? 2 : 4} gap={8}>
         {images.resources.map((item) => (
           <SimpleReactLightbox>
             <SRLWrapper>
@@ -21,10 +21,9 @@ const Products = () => {
               <ImageListItem
                 key={item.id}
                 sx={{
-                  opacity: ".9",
-                  transition: "opacity .3s linear",
+                  transition: "transform .3s linear",
                   cursor: "pointer",
-                  "&:hover": { opacity: 1 },
+                  "&:hover": { transform: "scale(1.1)" },
                 }}
               >
                 <img
