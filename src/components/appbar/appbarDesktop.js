@@ -7,9 +7,9 @@ import Link from "@mui/material/Link";
 
 export default function AppbarDesktop({ matches }) {
   return (
-    <AppbarContainer>
+    <AppbarContainer matches={matches}>
       <AppbarHeader variant="h1">Kona's Cake</AppbarHeader>
-      <MyList type="row">
+      <MyList type={!matches && "row"}>
         <ListItem>
           <ListItemIcon>
             <LocationOn />

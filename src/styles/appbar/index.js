@@ -2,10 +2,9 @@ import { IconButton, List, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import { Colors, DrawerWidth } from "../theme";
-import { textPopUpTop } from "../../animation";
 
-export const AppbarContainer = styled(Box)(() => ({
-  display: "flex",
+export const AppbarContainer = styled(Box)(({ matches }) => ({
+  display: matches ? "block" : "flex",
   marginTop: 4,
   justifyContent: "center",
   alignItems: "center",
