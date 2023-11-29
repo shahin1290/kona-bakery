@@ -17,7 +17,6 @@ const Products = () => {
         {images.resources.map((item) => (
           <SimpleReactLightbox>
             <SRLWrapper>
-              {" "}
               <ImageListItem
                 key={item.id}
                 sx={{
@@ -30,7 +29,6 @@ const Products = () => {
                   src={`${item.url}?w=164&h=164&fit=crop&auto=format&dpr=2`}
                   srcSet={`${item.url}?w=248&fit=crop&auto=format&dpr=2 2x`}
                   alt="cake"
-                  loading="lazy"
                 />
                 <ImageListItemBar title={item.id} />
               </ImageListItem>
